@@ -1,0 +1,115 @@
+<!--Test with HTML Canvas
+    By Jeasika López-->
+<html>
+ <head>
+  <script type="application/javascript">
+    function draw() {
+      var canvas = document.getElementById("canvas");
+      if (canvas.getContext) {
+        var ctx = canvas.getContext("2d"); 
+
+        //CIELO
+        ctx.fillStyle = "rgb(0, 170, 228)";
+        ctx.fillRect (0, 0, 2500, 2500);
+
+        //MARIO BROS
+        //SOMBRERO
+        ctx.fillStyle = "rgb(200,0,0)";
+        ctx.fillRect (150, 50, 80, 25);
+        ctx.fillStyle = "rgb(200,0,0)";
+        ctx.fillRect (130, 75, 160, 20);
+        //ROSTRO
+        ctx.fillStyle = "rgb(226, 188, 157)";
+        ctx.fillRect (130, 95, 130, 65);
+        ctx.fillStyle = "rgb(226, 188, 157)";
+        ctx.fillRect (260, 110, 30, 50);
+        ctx.fillStyle = "rgb(226, 188, 157)";
+        ctx.fillRect (290, 125, 15, 20);
+        ctx.fillStyle = "rgb(226, 188, 157)";
+        ctx.fillRect (145, 160, 130, 15);
+        //PELO
+        ctx.fillStyle = "rgb(128, 64, 0)";
+        ctx.fillRect (110, 110, 20, 50);
+        ctx.fillStyle = "rgb(128, 64, 0)";
+        ctx.fillRect (130, 145, 15, 15);
+        ctx.fillStyle = "rgb(128, 64, 0)";
+        ctx.fillRect (130, 95, 45, 15);
+        ctx.fillStyle = "rgb(128, 64, 0)";
+        ctx.fillRect (145, 110, 15, 35);
+        ctx.fillStyle = "rgb(128, 64, 0)";
+        ctx.fillRect (160, 130, 15, 15);
+        //OJO, BOCA Y BIGOTE
+        ctx.fillStyle = "rgb(0, 0, 0)";
+        ctx.fillRect (215, 95, 15, 35);
+        ctx.fillStyle = "rgb(0, 0, 0)";
+        ctx.fillRect (230, 130, 15, 20);
+        ctx.fillStyle = "rgb(0, 0, 0)";
+        ctx.fillRect (215, 145, 75, 15);
+        //CAMISA
+        ctx.fillStyle = "rgb(200, 0, 0)";
+        ctx.fillRect (130, 175, 115, 70);
+          //MANGA IZQ
+          ctx.fillStyle = "rgb(200, 0, 0)";
+          ctx.fillRect (110, 190, 20, 20);
+          ctx.fillStyle = "rgb(200, 0, 0)";
+          ctx.fillRect (90, 210, 40, 20);
+          //MANO IZQ
+          ctx.fillStyle = "rgb(226, 188, 157)";
+          ctx.fillRect (90, 230, 40, 50);
+          ctx.fillStyle = "rgb(226, 188, 157)";
+          ctx.fillRect (130, 245, 15, 15);
+
+          //MANGA DER
+          ctx.fillStyle = "rgb(200, 0, 0)";
+          ctx.fillRect (245, 195, 45, 35);
+          ctx.fillStyle = "rgb(200, 0, 0)";
+          ctx.fillRect (290, 210, 15, 20);
+          ctx.fillStyle = "rgb(200, 0, 0)";
+          ctx.fillRect (260, 230, 15, 15);
+          //MANO DER
+          ctx.fillStyle = "rgb(226, 188, 157)";
+          ctx.fillRect (275, 230, 30, 50);
+          ctx.fillStyle = "rgb(226, 188, 157)";
+          ctx.fillRect (260, 245, 15, 15);
+        
+        //OVEROL
+        ctx.fillStyle = "rgb(0, 0, 128)";
+        ctx.fillRect (160, 175, 15, 40);
+        ctx.fillStyle = "rgb(0, 0, 128)";
+        ctx.fillRect (230, 195, 15, 20);
+        ctx.fillStyle = "rgb(0, 0, 128)";
+        ctx.fillRect (160, 215, 85, 15);
+        ctx.fillStyle = "rgb(0, 0, 128)";
+        ctx.fillRect (145, 230, 115, 50);
+          //PIE IZQ
+          ctx.fillStyle = "rgb(0, 0, 128)";
+          ctx.fillRect (130, 260, 45, 40);
+          //ZAP IZQ
+          ctx.fillStyle = "rgb(128, 64, 0)";
+          ctx.fillRect (110, 300, 50, 20);
+          ctx.fillStyle = "rgb(128, 64, 0)";
+          ctx.fillRect (90, 320, 70, 15);
+
+          //PIE DER
+          ctx.fillStyle = "rgb(0, 0, 128)";
+          ctx.fillRect (230, 260, 45, 40);
+          //ZAP DER
+          ctx.fillStyle = "rgb(128, 64, 0)";
+          ctx.fillRect (250, 300, 50, 20);
+          ctx.fillStyle = "rgb(128, 64, 0)";
+          ctx.fillRect (250, 320, 70, 15);
+
+          //BOTONES
+          ctx.fillStyle = "rgb(200, 200, 0)";
+          ctx.fillRect (160, 230, 15, 15);
+          ctx.fillStyle = "rgb(200, 200, 0)";
+          ctx.fillRect (230, 230, 15, 15);
+
+      }
+    }
+  </script>
+ </head>
+ <body onload="draw();">
+   <canvas id="canvas" width="500" height="500"></canvas>
+ </body>
+</html>
